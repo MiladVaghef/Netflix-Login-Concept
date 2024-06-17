@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Inter-Medium;
+  src: url(Fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: Inter-Light;
+  src: url(Fonts/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url(Fonts/BebasNeue.otf) format(opentype);
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: #171717;
+  font-family: Inter-Medium;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+#netflixBanner {
+  border-radius: 1.5vw 0px 0px 1.5vw;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ed262d;
+  gap: 1vw;
+}
+
+#bannerImage img {
+  width: 20vw;
+  vertical-align: middle;
+}
+
+#bannerText {
+  font-family: Inter-Light;
+  text-align: center;
+  color: #feeff0;
+  letter-spacing: 0.2vw;
+  font-size: 1.2vw;
+}
+
+#bannerText h2 {
+  margin: 0px;
+}
