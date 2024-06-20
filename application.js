@@ -1,5 +1,6 @@
 // Import the banner from banner.js
-import { banner } from "../components/banner.js";
+import { banner } from "./Components/banner.js";
+
 // Create the banner
 function createBanner() {
   banner();

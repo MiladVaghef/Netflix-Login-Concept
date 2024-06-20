@@ -33,5 +33,5 @@ export function banner() {
   readyToWatch.innerHTML = "Ready To<br> Watch";
 
   // return the completed banner section
-  return secondSection;
+  return bannerSection;
 }
