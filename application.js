@@ -5,5 +5,9 @@ import { banner } from "./Components/banner.js";
 function createBanner() {
   banner();
 }
+// Call the functions
+function callFunctions() {
+  createBanner();
+}
 
-createBanner();
+callFunctions();
