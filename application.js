@@ -6,6 +6,7 @@ import {
   createElement, // create elements without ID and class
   appendChild, // appendChild elements
   addImage, // create and add link to created image
+  prependChild, // create and add link to created image
 } from "./utility.js";
 
 // Import the banner from banner.js
