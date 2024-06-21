@@ -15,7 +15,7 @@ export function createElementsWithID(element, id, append) {
   return createElements;
 }
 // Create HTML element by getting the element tag, Class and append it
-export function createEelementsWithClass(element, className, append) {
+export function createElementsWithClass(element, className, append) {
   const createEelements = document.createElement(element);
   createEelements.setAttribute("class", className);
   $(append).append(createEelements);
@@ -23,7 +23,7 @@ export function createEelementsWithClass(element, className, append) {
   return createEelements;
 }
 // Create HTML element by getting the element tag, ID, classname and append it
-export function createEelementsWithClassAndID(element, id, className, append) {
+export function createElementsWithClassAndID(element, id, className, append) {
   const createEelements = document.createElement(element);
   createEelements.setAttribute("id", id);
   createEelements.setAttribute("class", className);

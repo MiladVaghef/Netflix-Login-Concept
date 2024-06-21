@@ -1,7 +1,7 @@
 // Imported functions from utility
 import {
   createElementsWithID, // create HTML elements with ID
-  createEelementsWithClassAndID, // create html elements with class and ID
+  createElementsWithClassAndID, // create html elements with class and ID
   appendChild, // appendChild elements
   createElement, // create elements without ID and class
   addImage, // create and add link to created image
@@ -9,7 +9,7 @@ import {
 
 export function banner() {
   // create the banner section element
-  let bannerSection = createEelementsWithClassAndID(
+  let bannerSection = createElementsWithClassAndID(
     "section",
     "netflixBanner",
     "column",

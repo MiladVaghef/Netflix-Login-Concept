@@ -1,8 +1,8 @@
 // Imported functions from utility
 import {
   createElementsWithID, // create HTML elements with ID
-  createEelementsWithClass, // create HTML element with class
-  createEelementsWithClassAndID, // create html elements with class and ID
+  createElementsWithClass, // create HTML element with class
+  createElementsWithClassAndID, // create html elements with class and ID
   createElement, // create elements without ID and class
   appendChild, // appendChild elements
   addImage, // create and add link to created image
@@ -13,7 +13,7 @@ import {
 import { banner } from "./Components/banner.js";
 
 function createMainTag() {
-  let mainTag = createEelementsWithClass("main", "row");
+  let mainTag = createElementsWithClass("main", "row");
   prependChild("body", mainTag);
 }
 
