@@ -22,7 +22,7 @@ export function createEelementsWithClass(element, className, append) {
 
   return createEelements;
 }
-
+// Create HTML element by getting the element tag, ID, classname and append it
 export function createEelementsWithClassAndID(element, id, className, append) {
   const createEelements = document.createElement(element);
   createEelements.setAttribute("id", id);
