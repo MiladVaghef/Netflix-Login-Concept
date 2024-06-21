@@ -12,7 +12,8 @@ import {
 import { banner } from "./Components/banner.js";
 
 function createMainTag() {
-  createEelementsWithClass("main", "row", "body");
+  let mainTag = createEelementsWithClass("main", "row");
+  prependChild("body", mainTag);
 }
 
 // Create the banner
