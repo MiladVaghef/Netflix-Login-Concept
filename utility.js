@@ -40,9 +40,10 @@ export function appendChild(parentElement, childElement) {
   $(parentElement).append(childElement);
 }
 // Create a HTML image element with its src and append it
-export function addImage(link, parentElement) {
+export function addImage(link, alt, parentElement) {
   const createImage = document.createElement("img");
   createImage.setAttribute("src", link);
+  createImage.setAttribute("alt", alt);
   $(parentElement).append(createImage);
 
   return createImage;

@@ -20,10 +20,7 @@ export function banner() {
   let bannerImage = createElementsWithID("div", "bannerImage");
   appendChild(bannerSection, bannerImage);
   // add the netflix TV image
-  addImage("Images/Netflix-TV.svg", bannerImage).setAttribute(
-    "alt",
-    "NetflixBanner"
-  );
+  addImage("Images/Netflix-TV.svg", "NetflixTV Banner", bannerImage);
 
   // create the banner text element
   let bannerText = createElementsWithID("div", "bannerText");
