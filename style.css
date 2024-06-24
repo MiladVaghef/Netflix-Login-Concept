@@ -8,6 +8,22 @@
   --charcoal: #171717;
 }
 
+/* Inter Medium Font */
+@font-face {
+  font-family: Inter-Medium;
+  src: url(Fonts/Inter-Medium.ttf);
+}
+/* Inter Light Font */
+@font-face {
+  font-family: Inter-Light;
+  src: url(Fonts/Inter-Light.ttf);
+}
+/* Bebasneue Font */
+@font-face {
+  font-family: BebasNeue;
+  src: url(Fonts/BebasNeue.otf) format(opentype);
+}
+
 /* Global body styles */
 body {
   margin: 0%;
