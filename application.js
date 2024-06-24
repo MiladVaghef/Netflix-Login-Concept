@@ -1,39 +1,48 @@
-// Imported functions from utility
+// Imported functions from utility.js
 import {
-  createElementsWithID, // create HTML elements with ID
-  createElementsWithClass, // create HTML element with class
-  createElementsWithClassAndID, // create html elements with class and ID
-  createElement, // create elements without ID and class
-  appendChild, // appendChild elements
-  addImage, // create and add link to created image
-  prependChild, // create and add link to created image
+  createElementsWithID, // Function to create HTML elements with ID
+  createElementsWithClass, // Function to create HTML element with class
+  createElementsWithClassAndID, // Function to create HTML elements with both class and ID
+  createElement, // Function to create generic HTML elements
+  appendChild, // Function to append child elements to a parent
+  addImage, // Function to create and add an image element
+  prependChild, // Function to prepend child elements to a parent
 } from "./utility.js";
 
-// Import the banner from banner.js
+// Import the banner function from banner.js
 import { banner } from "./Components/banner.js";
 
 // Import the signUp function from signUp.js
 import { signUp } from "./Components/signUp.js";
 
+// Function to create the main <main> tag and append it to <body>
 function createMainTag() {
+  // Create <main> element with class "row"
   let mainTag = createElementsWithClass("main", "row");
+
+  // Prepend <main> to <body>
   prependChild("body", mainTag);
 }
 
-// Create the banner
+// Function to create the banner using imported function
 function createBanner() {
+  // Call the banner function imported from banner.js
   banner();
 }
-// Create the signUp
+
+// Function to create the sign up form using imported function
 function createSignUp() {
+  // Call the signUp function imported from signUp.js
   signUp();
 }
 
-// Call the functions
+// Function to call all setup functions in order
 function callFunctions() {
-  createMainTag();
-  createBanner();
-  createSignUp();
+  // Call functions to set up the page
+  createMainTag(); // Create <main> tag and append to <body>
+  createBanner(); // Create banner
+  createSignUp(); // Create sign-up form
 }
 
+// Call the function to start setting up the page
 callFunctions();

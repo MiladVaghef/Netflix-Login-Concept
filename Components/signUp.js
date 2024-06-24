@@ -1,20 +1,24 @@
-// Imported functions from utility
+// Imported functions from utility.js
 import {
-  createElementsWithID, // create HTML elements with ID
-  createElementsWithClass, // create HTML element with class
-  createElementsWithClassAndID, // create html elements with class and ID
-  appendChild, // appendChild elements
-  prependChild, // create and add link to created image
+  createElementsWithID, // Function to create HTML elements with ID
+  createElementsWithClass, // Function to create HTML element with class
+  createElementsWithClassAndID, // Function to create HTML elements with both class and ID
+  appendChild, // Function to append child elements to a parent
+  prependChild, // Function to prepend child elements to a parent
 } from "../utility.js";
 
+// Main function to set up sign up form
 export function signUp() {
+  // Create section container for sign up form
   let signUpSection = createElementsWithClassAndID(
     "section",
     "signUpFormContainer",
     "column"
   );
+  // Prepend sign up section to main element
   prependChild("main", signUpSection);
 
+  // Create holder div inside sign up section
   createElementsWithClassAndID(
     "div",
     "holder",
@@ -22,6 +26,7 @@ export function signUp() {
     signUpSection
   );
 
+  // Call functions to create components of sign up form
   netflixLogo();
   signUpInputs();
   termOfUse();
@@ -29,18 +34,19 @@ export function signUp() {
   sendToLogin();
 }
 
+// Function to create Netflix logo
 function netflixLogo() {
-  // Create container div
+  // Create container div for Netflix logo
   let logoContainer = createElementsWithID("div", "netflixLogo", "#holder");
 
-  // Create SVG element
+  // Create SVG element for Netflix logo
   let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
   svg.setAttribute("width", "227");
   svg.setAttribute("height", "85");
   svg.setAttribute("viewBox", "0 0 227 85");
 
-  // Create path element inside SVG
+  // Create path element inside SVG with specific path data
   let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   path.setAttribute(
     "d",
@@ -50,22 +56,28 @@ function netflixLogo() {
   // Append path to SVG
   svg.appendChild(path);
 
-  // Append SVG to container
+  // Append SVG to logo container
   appendChild(logoContainer, svg);
-  // Append container to parent element
+
+  // Append logo container to holder
   appendChild("#holder", logoContainer);
 }
 
+// Function to create sign up form inputs
 function signUpInputs() {
+  // Create form element with class and ID
   createElementsWithClassAndID("form", "signUpForm", "column", "#holder");
 
+  // Array of input configurations
   const inputs = [
     { type: "username", placeholder: "Name", autocomplete: "username" },
     { type: "email", placeholder: "Email Address", autocomplete: "email" },
     { type: "password", placeholder: "Create Password" },
   ];
 
+  // Loop through input configurations and create inputs
   inputs.forEach((inputConfig) => {
+    // Create input element with specific class and add attributes
     let createInputs = createElementsWithClass("input", "formInput", "form");
     createInputs.type = inputConfig.type;
     createInputs.placeholder = inputConfig.placeholder;
@@ -73,8 +85,12 @@ function signUpInputs() {
   });
 }
 
+// Function to create terms of use text and link
 function termOfUse() {
+  // Create parent div for terms of use
   let termOfUseParentDiv = createElementsWithClass("div", "row", "#signUpForm");
+
+  // Create span for terms of use text
   let termOfUseSpan = createElementsWithClassAndID(
     "span",
     "termText",
@@ -83,6 +99,7 @@ function termOfUse() {
   );
   termOfUseSpan.innerText = "By signing up, you confirm that you accept our";
 
+  // Create link for terms of use
   let termOfUseLink = createElementsWithClassAndID(
     "a",
     "termLink",
@@ -93,18 +110,21 @@ function termOfUse() {
   termOfUseLink.setAttribute("href", "#");
 }
 
+// Function to create sign up button
 function signUpButton() {
+  // Create sign up button element with class and ID
   let signUnButtonElement = createElementsWithClassAndID(
     "button",
     "signUpButton",
     "submitButton",
     "#signUpForm"
   );
-
   signUnButtonElement.innerText = "Sign Up";
 }
 
+// Function to create link for login redirection
 function sendToLogin() {
+  // Create container div for login link
   let loginLinkContainer = createElementsWithClassAndID(
     "div",
     "loginLinkContainer",
@@ -112,22 +132,22 @@ function sendToLogin() {
     "#holder"
   );
 
+  // Create span for 'Already a member?' text
   let alreadyMemberSpan = createElementsWithClassAndID(
     "span",
     "alreadyMemberText",
     "mediumText",
     loginLinkContainer
   );
-
   alreadyMemberSpan.innerText = "Already a member?";
 
+  // Create link for login
   let loginLink = createElementsWithClassAndID(
     "a",
     "loginLink",
     "mediumText",
     loginLinkContainer
   );
-
   loginLink.innerText = "Login";
   loginLink.setAttribute("href", "#");
 }
