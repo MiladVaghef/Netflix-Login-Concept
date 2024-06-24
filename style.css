@@ -1,3 +1,12 @@
+:root {
+  --dark-grey: #808080;
+  --light-grey: #b6b6b6;
+  --white: #ffffff;
+  --burnt-red: #c31e25;
+  --deep-red: #f2232a;
+  --charcoal: #171717;
+}
+
 @font-face {
   font-family: Inter-Medium;
   src: url(Fonts/Inter-Medium.ttf);
@@ -17,8 +26,9 @@ body {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  background-color: #171717;
+  background-color: var(--charcoal);
   font-family: Inter-Medium;
+  overflow-y: hidden;
 }
 
 .row {
@@ -38,7 +48,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #ed262d;
+  background-color: var(--deep-red);
   gap: 1vw;
 }
 
@@ -50,7 +60,7 @@ body {
 #bannerText {
   font-family: Inter-Light;
   text-align: center;
-  color: #feeff0;
+  color: var(--white);
   letter-spacing: 0.2vw;
   font-size: 1.2vw;
 }
