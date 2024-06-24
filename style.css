@@ -1,9 +1,11 @@
 /* Custom CSS variables */
 :root {
-  --dark-grey: #808080;
-  --light-grey: #b6b6b6;
   --white: #ffffff;
+  --lighter-grey: #efefef;
+  --light-grey: #b6b6b6;
+  --dark-grey: #808080;
   --burnt-red: #c31e25;
+  --light-red: #b00009;
   --deep-red: #f2232a;
   --charcoal: #171717;
 }
@@ -89,6 +91,11 @@ body {
   border-radius: 10px;
   border: none;
 }
+/* Styling for when .formInput is hovered */
+.formInput:hover {
+  background-color: var(--lighter-grey);
+  transition: all 0.3s ease-in;
+}
 /* Styling for when .forInput is on focus */
 .formInput:focus {
   outline: none;
@@ -119,6 +126,13 @@ body {
   border: none;
   border-radius: 10px;
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.submitButton:hover {
+  background-color: var(--light-red);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 /* Styling for #loginLinkContainer */
