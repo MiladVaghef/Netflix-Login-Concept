@@ -41,9 +41,88 @@ body {
   flex-direction: column;
 }
 
+.container {
+  min-width: 520px;
+  max-width: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signUpFormContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+#netflixLogo {
+  margin-bottom: 70px;
+}
+
+#netflixLogo svg path {
+  fill: var(--deep-red);
+}
+
+#signUpForm {
+  width: 100%;
+}
+
+.formInput {
+  color: var(--light-grey);
+  font-size: 15px;
+  font-family: Inter-Medium;
+  margin-bottom: 20px;
+  text-indent: 20px;
+  padding: 14px 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.smallText {
+  color: var(--dark-grey);
+}
+
+#termText {
+  margin-right: 5px;
+}
+
+#termLink {
+  color: var(--burnt-red);
+}
+
+.submitButton {
+  color: #ffffff;
+  background-color: var(--deep-red);
+  font-size: 20px;
+  margin-top: 60px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+#loginLinkContainer {
+  margin-top: 20%;
+  text-align: left;
+  width: 100%;
+}
+
+.mediumText {
+  color: #808080;
+}
+
+#alreadyMemberText {
+  margin-right: 5px;
+}
+#loginLink {
+  color: var(--burnt-red);
+}
+
 #netflixBanner {
   border-radius: 1.5vw 0px 0px 1.5vw;
-  width: 35%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +132,7 @@ body {
 }
 
 #bannerImage img {
-  width: 20vw;
+  width: 19vw;
   vertical-align: middle;
 }
 
@@ -62,7 +141,7 @@ body {
   text-align: center;
   color: var(--white);
   letter-spacing: 0.2vw;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
 }
 
 #bannerText h2 {

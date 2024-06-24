@@ -12,6 +12,9 @@ import {
 // Import the banner from banner.js
 import { banner } from "./Components/banner.js";
 
+// Import the signUp function from signUp.js
+import { signUp } from "./Components/signUp.js";
+
 function createMainTag() {
   let mainTag = createElementsWithClass("main", "row");
   prependChild("body", mainTag);
@@ -21,10 +24,16 @@ function createMainTag() {
 function createBanner() {
   banner();
 }
+// Create the signUp
+function createSignUp() {
+  signUp();
+}
+
 // Call the functions
 function callFunctions() {
   createMainTag();
   createBanner();
+  createSignUp();
 }
 
 callFunctions();
