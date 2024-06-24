@@ -89,6 +89,10 @@ body {
   border-radius: 10px;
   border: none;
 }
+/* Styling for when .forInput is on focus */
+.formInput:focus {
+  outline: none;
+}
 
 /* Styling for .smallText */
 .smallText {
