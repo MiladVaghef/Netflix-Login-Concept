@@ -97,14 +97,14 @@ function termOfUse() {
     "smallText",
     termOfUseParentDiv
   );
-  termOfUseSpan.innerText = "By signing up, you confirm that you accept our";
+  termOfUseSpan.innerText = "By signing up, you confirm that you accept our ";
 
   // Create link for terms of use
   let termOfUseLink = createElementsWithClassAndID(
     "a",
     "termLink",
     "smallText",
-    termOfUseParentDiv
+    termOfUseSpan
   );
   termOfUseLink.innerText = "Terms of use";
   termOfUseLink.setAttribute("href", "#");
@@ -139,14 +139,14 @@ function sendToLogin() {
     "mediumText",
     loginLinkContainer
   );
-  alreadyMemberSpan.innerText = "Already a member?";
+  alreadyMemberSpan.innerText = "Already a member? ";
 
   // Create link for login
   let loginLink = createElementsWithClassAndID(
     "a",
     "loginLink",
     "mediumText",
-    loginLinkContainer
+    alreadyMemberSpan
   );
   loginLink.innerText = "Login";
   loginLink.setAttribute("href", "#");

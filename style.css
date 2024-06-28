@@ -147,11 +147,6 @@ body {
   color: #808080;
 }
 
-/* Styling for #alreadyMemberText */
-#alreadyMemberText {
-  margin-right: 5px;
-}
-
 /* Styling for #loginLink */
 #loginLink {
   color: var(--burnt-red);
