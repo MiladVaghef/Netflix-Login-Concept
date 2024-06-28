@@ -1,0 +1,17 @@
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+  /* Global body styles */
+  body {
+    overflow-y: unset;
+    overflow-x: hidden;
+  }
+  /* Styling for #signUpFormContainer */
+  #signUpFormContainer {
+    width: 100%;
+  }
+
+  /* Styling for #netflixBanner */
+  #netflixBanner {
+    display: none;
+  }
+}
