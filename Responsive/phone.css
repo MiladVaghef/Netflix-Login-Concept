@@ -24,7 +24,8 @@
 
   /* Styling for #signUpForm */
   #signUpForm {
-    width: 110%;
+    width: auto;
+    padding: 20px;
   }
 
   /* Styling for .formInput */
@@ -38,12 +39,12 @@
   /* Styling for #termText */
   #termText {
     margin-right: 3px;
-    font-size: 11px;
+    font-size: 10px;
   }
 
   /* Styling for #termLink */
   #termLink {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   /* Styling for .submitButton */
@@ -57,7 +58,7 @@
   #loginLinkContainer {
     margin-top: 20%;
     text-align: left;
-    width: 110%;
+    width: auto;
   }
 
   /* Styling for .mediumText */
