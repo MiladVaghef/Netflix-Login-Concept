@@ -1,0 +1,57 @@
+@media (max-height: 720px) {
+  /* Styling for #netflixLogo */
+  #netflixLogo {
+    margin-bottom: 20px;
+  }
+
+  /* Styling for #netflixLogo svg */
+  #netflixLogo svg {
+    width: 140px;
+  }
+
+  /* Styling for #signUpForm */
+  #signUpForm {
+    width: 80%;
+  }
+
+  /* Styling for .formInput */
+  .formInput {
+    font-size: 12px;
+    padding: 12px 8px;
+    border-radius: 7px;
+  }
+
+  /* Styling for #termText */
+  #termText {
+    margin-right: 4px;
+    font-size: 12px;
+  }
+
+  /* Styling for #termLink */
+  #termLink {
+    font-size: 12px;
+  }
+
+  /* Styling for .submitButton */
+  .submitButton {
+    font-size: 13px;
+    margin-top: 35px;
+    padding: 15px 0px;
+  }
+
+  /* Styling for #loginLinkContainer */
+  #loginLinkContainer {
+    margin-top: 10%;
+    width: 80%;
+  }
+
+  /* Styling for #alreadyMemberText */
+  #alreadyMemberText {
+    font-size: 12px;
+  }
+
+  /* Styling for #loginLink */
+  #loginLink {
+    font-size: 12px;
+  }
+}
