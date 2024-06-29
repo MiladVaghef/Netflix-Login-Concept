@@ -7,6 +7,7 @@
   --burnt-red: #c31e25;
   --light-red: #b00009;
   --deep-red: #f2232a;
+  --crimson: #e2282e;
   --charcoal: #171717;
 }
 
@@ -162,12 +163,15 @@ body {
   height: 100vh;
   background-color: var(--deep-red);
   gap: 1vw;
+  overflow: hidden;
 }
 
 /* Styling for #bannerImage img */
 #bannerImage img {
+  position: relative;
   width: 19vw;
   vertical-align: middle;
+  z-index: 2;
 }
 
 /* Styling for #bannerText */
@@ -177,6 +181,8 @@ body {
   color: var(--white);
   letter-spacing: 0.2vw;
   font-size: 1.1vw;
+  position: relative;
+  z-index: 2;
 }
 
 /* Styling for #bannerText h2 */

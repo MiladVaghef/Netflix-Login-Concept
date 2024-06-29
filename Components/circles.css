@@ -1,0 +1,193 @@
+/* The circles container */
+#circlesContainer {
+  position: relative;
+}
+/* Default style of all circles */
+.bannerCircles {
+  position: absolute;
+  background-color: var(--crimson);
+  z-index: 1;
+}
+/* All the 21 circles: */
+#circle1 {
+  top: -33.6vw;
+  left: -15vw;
+  height: 10vw;
+  width: 20vw;
+  border-top-left-radius: 10vw;
+  border-top-right-radius: 10vw;
+}
+
+#circle2 {
+  top: -33.6vw;
+  left: 4vw;
+  height: 5vw;
+  width: 10vw;
+  border-bottom-left-radius: 10vw;
+  border-bottom-right-radius: 10vw;
+}
+
+#circle3 {
+  top: -28.2vw;
+  left: 4.6vw;
+  height: 5vw;
+  width: 10vw;
+  border-bottom-left-radius: 10vw;
+  border-bottom-right-radius: 10vw;
+}
+
+#circle4 {
+  top: -23.2vw;
+  left: -15vw;
+  height: 20vw;
+  width: 10vw;
+  border-top-left-radius: 10vw;
+  border-bottom-left-radius: 10vw;
+}
+
+#circle5 {
+  top: -23.2vw;
+  left: -4.4vw;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 10vw;
+}
+
+#circle6 {
+  top: -22.4vw;
+  left: -3.7vw;
+  width: 0px;
+  height: 0px;
+  border-radius: 10vw;
+  border: 9.8vw solid var(--crimson);
+  background-color: unset;
+  border-top-color: transparent;
+  transform: rotate(315deg);
+}
+#circle7 {
+  top: -3vw;
+  left: -14.8vw;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 10vw;
+}
+
+#circle8 {
+  top: -3vw;
+  left: -3.9vw;
+  height: 10vw;
+  width: 10vw;
+  border-top-right-radius: 10vw;
+}
+
+#circle9 {
+  top: -3vw;
+  left: 4.8vw;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 10vw;
+}
+
+#circle10 {
+  top: 9vw;
+  left: -14.8vw;
+  height: 10vw;
+  width: 10vw;
+  border-bottom-left-radius: 10vw;
+}
+
+#circle11 {
+  top: 9vw;
+  left: -3.9vw;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 10vw;
+}
+
+#circle12 {
+  top: 9vw;
+  left: 6.3vw;
+  height: 10vw;
+  width: 10vw;
+  border-top-right-radius: 10vw;
+}
+
+#circle13 {
+  top: 19.3vw;
+  left: -15vw;
+  height: 10vw;
+  width: 20vw;
+  border-top-left-radius: 10vw;
+  border-top-right-radius: 10vw;
+}
+
+#circle14 {
+  top: 20vw;
+  left: 4.4vw;
+  height: 5vw;
+  width: 10vw;
+  border-bottom-left-radius: 10vw;
+  border-bottom-right-radius: 10vw;
+}
+
+#circle15 {
+  top: 25.5vw;
+  left: 4.9vw;
+  height: 5vw;
+  width: 10vw;
+  border-bottom-left-radius: 10vw;
+  border-bottom-right-radius: 10vw;
+}
+
+#circle16 {
+  top: 29.9vw;
+  left: -15vw;
+  height: 20vw;
+  width: 10vw;
+  border-top-left-radius: 10vw;
+  border-bottom-left-radius: 10vw;
+}
+
+#circle17 {
+  top: 29.9vw;
+  left: -4.4vw;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 10vw;
+}
+
+#circle18 {
+  top: 30.5vw;
+  left: -3.7vw;
+  width: 0px;
+  height: 0px;
+  border-radius: 10vw;
+  border: 9.8vw solid var(--crimson);
+  background-color: unset;
+  border-top-color: transparent;
+  transform: rotate(315deg);
+}
+
+#circle19 {
+  top: 50vw;
+  left: -14.8vw;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 10vw;
+}
+
+#circle20 {
+  top: 50vw;
+  left: -3.9vw;
+  height: 10vw;
+  width: 10vw;
+  border-top-right-radius: 10vw;
+}
+
+#circle21 {
+  top: 50vw;
+  left: 5.8vw;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 10vw;
+}
