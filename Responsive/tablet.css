@@ -10,6 +10,12 @@
     width: 100%;
   }
 
+  /* Styling for #loginLinkContainer */
+  #loginLinkContainer {
+    margin-bottom: 5%;
+    width: auto;
+  }
+
   /* Styling for #netflixBanner */
   #netflixBanner {
     display: none;
