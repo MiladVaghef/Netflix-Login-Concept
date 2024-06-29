@@ -1,5 +1,6 @@
 # Netflix Login Concept
-![image](https://github.com/MiladVaghef/Netflix-Login-Concept/assets/143057362/75d0a23e-ab67-4b60-934a-e1c9bb7f71e4)
+![image (1)](https://github.com/MiladVaghef/Netflix-Login-Concept/assets/143057362/acc97994-e919-47dc-ba77-614612ffc626)
+
  
 A netflix login concept that has been brought to you!  
 
