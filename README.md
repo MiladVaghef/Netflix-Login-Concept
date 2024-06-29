@@ -26,8 +26,8 @@ tablets these days play a huge role in the web world, so it's really necessary t
 **Phone View:**
 ![Untitled-1](https://github.com/MiladVaghef/Netflix-Login-Concept/assets/143057362/48136418-774f-4d60-a332-8006f3149260)
 
-resolutions, providing an effortless user experience. 
-with the widespread use of smartphones, it's essential to ensure a responsive design that caters to the diverse mobile landscape
+the project has been optimized to seamlessly adapt to various phone screen sizes and resolutions, providing an effortless user experience.  
+with the widespread use of smartphones, it's essential to ensure a responsive design that caters to the diverse mobile landscape.
 
 ## Developers 
 
