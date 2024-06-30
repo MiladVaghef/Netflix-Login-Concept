@@ -26,9 +26,7 @@ export function signUp() {
 
   // Call functions to create components of sign up form
   netflixLogo();
-  signUpInputs();
-  termOfUse();
-  signUpButton();
+  signUpForm();
   sendToLogin();
 }
 
@@ -83,6 +81,9 @@ function signUpForm() {
     createInputs.placeholder = inputConfig.placeholder;
     createInputs.autocomplete = inputConfig.autocomplete;
   });
+
+  termOfUse();
+  signUpButton();
 }
 
 // Function to create terms of use text and link
