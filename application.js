@@ -1,11 +1,6 @@
 // Imported functions from utility.js
 import {
-  createElementsWithID, // Function to create HTML elements with ID
   createElementsWithClass, // Function to create HTML element with class
-  createElementsWithClassAndID, // Function to create HTML elements with both class and ID
-  createElement, // Function to create generic HTML elements
-  appendChild, // Function to append child elements to a parent
-  addImage, // Function to create and add an image element
   prependChild, // Function to prepend child elements to a parent
 } from "./utility.js";
 
