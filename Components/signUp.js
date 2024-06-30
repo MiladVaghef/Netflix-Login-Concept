@@ -1,30 +1,28 @@
 // Imported functions from utility.js
 import {
-  createElementsWithID, // Function to create HTML elements with ID
-  createElementsWithClass, // Function to create HTML element with class
-  createElementsWithClassAndID, // Function to create HTML elements with both class and ID
+  createElementWithID, // Function to create HTML elements with ID
+  createElementWithClass, // Function to create HTML element with class
+  createElementWithIDAndClass, // Function to create HTML elements with both class and ID
   appendChild, // Function to append child elements to a parent
   prependChild, // Function to prepend child elements to a parent
 } from "../utility.js";
 
 // Main function to set up sign up form
 export function signUp() {
+  const mainTag = document.querySelector("main");
+
   // Create section container for sign up form
-  let signUpSection = createElementsWithClassAndID(
+  let signUpSection = createElementWithIDAndClass(
     "section",
     "signUpFormContainer",
     "column"
   );
   // Prepend sign up section to main element
-  prependChild("main", signUpSection);
+  prependChild(mainTag, signUpSection);
 
   // Create holder div inside sign up section
-  createElementsWithClassAndID(
-    "div",
-    "holder",
-    "container column",
-    signUpSection
-  );
+  let holder = createElementWithIDAndClass("div", "holder", "container column");
+  appendChild(signUpSection, holder);
 
   // Call functions to create components of sign up form
   netflixLogo();
@@ -37,7 +35,8 @@ export function signUp() {
 // Function to create Netflix logo
 function netflixLogo() {
   // Create container div for Netflix logo
-  let logoContainer = createElementsWithID("div", "netflixLogo", "#holder");
+  let logoContainer = createElementWithID("div", "netflixLogo");
+  appendChild(holder, logoContainer);
 
   // Create SVG element for Netflix logo
   let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -54,19 +53,19 @@ function netflixLogo() {
   );
 
   // Append path to SVG
-  svg.appendChild(path);
-
+  appendChild(svg, path);
   // Append SVG to logo container
   appendChild(logoContainer, svg);
 
   // Append logo container to holder
-  appendChild("#holder", logoContainer);
+  appendChild(holder, logoContainer);
 }
 
 // Function to create sign up form inputs
-function signUpInputs() {
+function signUpForm() {
   // Create form element with class and ID
-  createElementsWithClassAndID("form", "signUpForm", "column", "#holder");
+  const form = createElementWithIDAndClass("form", "signUpForm", "column");
+  appendChild(holder, form);
 
   // Array of input configurations
   const inputs = [
@@ -78,7 +77,8 @@ function signUpInputs() {
   // Loop through input configurations and create inputs
   inputs.forEach((inputConfig) => {
     // Create input element with specific class and add attributes
-    let createInputs = createElementsWithClass("input", "formInput", "form");
+    let createInputs = createElementWithClass("input", "formInput");
+    appendChild(form, createInputs);
     createInputs.type = inputConfig.type;
     createInputs.placeholder = inputConfig.placeholder;
     createInputs.autocomplete = inputConfig.autocomplete;
@@ -87,67 +87,60 @@ function signUpInputs() {
 
 // Function to create terms of use text and link
 function termOfUse() {
+  let form = document.querySelector("#signUpForm");
   // Create parent div for terms of use
-  let termOfUseParentDiv = createElementsWithClass("div", "row", "#signUpForm");
+  let termOfUseParentDiv = createElementWithClass("div", "row");
+  appendChild(form, termOfUseParentDiv);
 
   // Create span for terms of use text
-  let termOfUseSpan = createElementsWithClassAndID(
-    "span",
-    "termText",
-    "smallText",
-    termOfUseParentDiv
-  );
-  termOfUseSpan.innerText = "By signing up, you confirm that you accept our ";
+  let termOfUseP = createElementWithIDAndClass("p", "termText", "smallText");
+  appendChild(termOfUseParentDiv, termOfUseP);
+  termOfUseP.innerText = "By signing up, you confirm that you accept our ";
 
   // Create link for terms of use
-  let termOfUseLink = createElementsWithClassAndID(
-    "a",
-    "termLink",
-    "smallText",
-    termOfUseSpan
-  );
+  let termOfUseLink = createElementWithIDAndClass("a", "termLink", "smallText");
+  appendChild(termOfUseP, termOfUseLink);
+
   termOfUseLink.innerText = "Terms of use";
   termOfUseLink.setAttribute("href", "#");
 }
 
 // Function to create sign up button
 function signUpButton() {
+  let form = document.querySelector("#signUpForm");
+
   // Create sign up button element with class and ID
-  let signUnButtonElement = createElementsWithClassAndID(
+  let signUnButtonElement = createElementWithIDAndClass(
     "button",
     "signUpButton",
-    "submitButton",
-    "#signUpForm"
+    "submitButton"
   );
+  appendChild(form, signUnButtonElement);
   signUnButtonElement.innerText = "Sign Up";
 }
 
 // Function to create link for login redirection
 function sendToLogin() {
   // Create container div for login link
-  let loginLinkContainer = createElementsWithClassAndID(
+  let loginLinkContainer = createElementWithIDAndClass(
     "div",
     "loginLinkContainer",
-    "row",
-    "#holder"
+    "row"
   );
+  appendChild(holder, loginLinkContainer);
 
   // Create span for 'Already a member?' text
-  let alreadyMemberSpan = createElementsWithClassAndID(
-    "span",
+  let alreadyMemberP = createElementWithIDAndClass(
+    "p",
     "alreadyMemberText",
-    "mediumText",
-    loginLinkContainer
+    "mediumText"
   );
-  alreadyMemberSpan.innerText = "Already a member? ";
+  appendChild(loginLinkContainer, alreadyMemberP);
+  alreadyMemberP.innerText = "Already a member? ";
 
   // Create link for login
-  let loginLink = createElementsWithClassAndID(
-    "a",
-    "loginLink",
-    "mediumText",
-    alreadyMemberSpan
-  );
+  let loginLink = createElementWithIDAndClass("a", "loginLink", "mediumText");
+  appendChild(alreadyMemberP, loginLink);
   loginLink.innerText = "Login";
   loginLink.setAttribute("href", "#");
 }

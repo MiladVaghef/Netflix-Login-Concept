@@ -1,7 +1,7 @@
 // Imported functions from utility
 import {
-  createElementsWithID, // create HTML elements with ID
-  createElementsWithClassAndID, // create html elements with class and ID
+  createElementWithID, // create HTML elements with ID
+  createElementWithIDAndClass, // create html elements with class and ID
   appendChild, // appendChild elements
   prependChild, // prependChild elements
   createElement, // create elements without ID and class
@@ -9,25 +9,29 @@ import {
 } from "../utility.js";
 
 export function banner() {
+  const mainTag = document.querySelector("main");
+
   // create the banner section element
-  let bannerSection = createElementsWithClassAndID(
+  const bannerSection = createElementWithIDAndClass(
     "section",
     "netflixBanner",
-    "column",
-    "main"
+    "column"
   );
+  appendChild(mainTag, bannerSection);
 
   // create the banner image element
-  let bannerImage = createElementsWithID("div", "bannerImage");
+  let bannerImage = createElementWithID("div", "bannerImage");
   appendChild(bannerSection, bannerImage);
   // add the netflix TV image
-  addImage("Images/Banner/Netflix-TV.svg", "NetflixTV Banner", bannerImage);
+  let NetflixTV = addImage("Images/Banner/Netflix-TV.svg", "NetflixTV Banner");
+  appendChild(bannerImage, NetflixTV);
 
   // create the banner text element
-  let bannerText = createElementsWithID("div", "bannerText");
+  let bannerText = createElementWithID("div", "bannerText");
   appendChild(bannerSection, bannerText);
   // create the "Ready To Watch" title
-  let readyToWatch = createElement("h2", bannerText);
+  let readyToWatch = createElement("h2");
+  appendChild(bannerText, readyToWatch);
   readyToWatch.innerHTML = "Ready To<br> Watch";
 
   circles();
@@ -39,15 +43,15 @@ export function banner() {
 function circles() {
   let banner = document.querySelector("#netflixBanner");
 
-  let circlesContainer = createElementsWithID("div", "circlesContainer");
+  let circlesContainer = createElementWithID("div", "circlesContainer");
 
   prependChild(banner, circlesContainer);
   for (let index = 0; index < 21; index++) {
-    createElementsWithClassAndID(
+    let circles = createElementWithIDAndClass(
       "div",
       `circle${index + 1}`,
-      "bannerCircles",
-      circlesContainer
+      "bannerCircles"
     );
+    appendChild(circlesContainer, circles);
   }
 }

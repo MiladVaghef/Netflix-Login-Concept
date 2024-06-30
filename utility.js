@@ -1,50 +1,44 @@
 // create HTML element by getting the element tag and append it
-export function createElement(element, append) {
-  const createEelements = document.createElement(element);
-  $(append).append(createEelements);
-
-  return createEelements;
+export function createElement(element) {
+  const createElement = document.createElement(element);
+  return createElement;
 }
 
 // Create HTML element by getting the element tag, ID and append it
-export function createElementsWithID(element, id, append) {
-  const createElements = document.createElement(element);
-  createElements.setAttribute("id", id);
-  $(append).append(createElements);
+export function createElementWithID(element, id) {
+  const createElement = document.createElement(element);
+  createElement.setAttribute("id", id);
 
-  return createElements;
+  return createElement;
 }
 // Create HTML element by getting the element tag, Class and append it
-export function createElementsWithClass(element, className, append) {
-  const createEelements = document.createElement(element);
-  createEelements.setAttribute("class", className);
-  $(append).append(createEelements);
+export function createElementWithClass(element, className) {
+  const createElement = document.createElement(element);
+  createElement.setAttribute("class", className);
 
-  return createEelements;
+  return createElement;
 }
 // Create HTML element by getting the element tag, ID, classname and append it
-export function createElementsWithClassAndID(element, id, className, append) {
-  const createEelements = document.createElement(element);
-  createEelements.setAttribute("id", id);
-  createEelements.setAttribute("class", className);
-  $(append).append(createEelements);
+export function createElementWithIDAndClass(element, id, className) {
+  const createElement = document.createElement(element);
+  createElement.setAttribute("id", id);
+  createElement.setAttribute("class", className);
 
-  return createEelements;
+  return createElement;
 }
 // Prepend a HTML element
-export function prependChild(firstElement, secondElement) {
-  $(firstElement).prepend(secondElement);
+export function prependChild(parentElement, childElement) {
+  parentElement.prepend(childElement);
 }
 // Append a HTML element
 export function appendChild(parentElement, childElement) {
-  $(parentElement).append(childElement);
+  parentElement.appendChild(childElement);
 }
 // Create a HTML image element with its src and append it
-export function addImage(link, alt, parentElement) {
+export function addImage(link, alt) {
   const createImage = document.createElement("img");
   createImage.setAttribute("src", link);
   createImage.setAttribute("alt", alt);
-  $(parentElement).append(createImage);
 
   return createImage;
 }

@@ -1,6 +1,6 @@
 // Imported functions from utility.js
 import {
-  createElementsWithClass, // Function to create HTML element with class
+  createElementWithClass, // Function to create HTML element with class
   prependChild, // Function to prepend child elements to a parent
 } from "./utility.js";
 
@@ -13,10 +13,10 @@ import { signUp } from "./Components/signUp.js";
 // Function to create the main <main> tag and append it to <body>
 function createMainTag() {
   // Create <main> element with class "row"
-  let mainTag = createElementsWithClass("main", "row");
+  let mainTag = createElementWithClass("main", "row");
 
   // Prepend <main> to <body>
-  prependChild("body", mainTag);
+  prependChild(document.body, mainTag);
 }
 
 // Function to create the banner using imported function
