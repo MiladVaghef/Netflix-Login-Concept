@@ -169,7 +169,7 @@ body {
 /* Styling for #bannerImage img */
 #bannerImage img {
   position: relative;
-  width: 19vw;
+  width: 17vw;
   vertical-align: middle;
   z-index: 2;
 }
@@ -180,7 +180,7 @@ body {
   text-align: center;
   color: var(--white);
   letter-spacing: 0.2vw;
-  font-size: 1.1vw;
+  font-size: 0.9vw;
   position: relative;
   z-index: 2;
 }
