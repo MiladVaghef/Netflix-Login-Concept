@@ -21,7 +21,7 @@ export function signUp() {
   prependChild(mainTag, signUpSection);
 
   // Create holder div inside sign up section
-  let holder = createElementWithIDAndClass("div", "holder", "container column");
+  let holder = createElementWithIDAndClass("div", "holder", "column");
   appendChild(signUpSection, holder);
 
   // Call functions to create components of sign up form
