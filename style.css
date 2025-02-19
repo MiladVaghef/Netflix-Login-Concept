@@ -49,8 +49,8 @@ body {
 
 /* Container styling */
 #holder {
-  min-width: 520px;
-  max-width: 520px;
+  min-width: 480px;
+  max-width: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,7 @@ body {
 
 /* Styling for #netflixLogo */
 #netflixLogo {
-  margin-bottom: 70px;
+  margin-bottom: 10%;
 }
 
 /* Styling for #netflixLogo svg path */
@@ -83,7 +83,7 @@ body {
 /* Styling for .formInput */
 .formInput {
   color: var(--light-grey);
-  font-size: 15px;
+  font-size: 14px;
   font-family: Inter-Medium;
   margin-bottom: 20px;
   text-indent: 20px;
@@ -108,6 +108,7 @@ body {
 /* Styling for .smallText */
 .smallText {
   color: var(--accent-text-color);
+  font-size: 12px;
 }
 
 /* Styling for #termText */
@@ -124,7 +125,7 @@ body {
 .submitButton {
   color: var(--text-color);
   background-color: var(--primary-color);
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 60px;
   padding: 20px 20px;
   border: none;
@@ -141,7 +142,7 @@ body {
 
 /* Styling for #loginLinkContainer */
 #loginLinkContainer {
-  margin-top: 20%;
+  margin-top: 15%;
   text-align: left;
   width: 100%;
 }
@@ -149,6 +150,7 @@ body {
 /* Styling for .mediumText */
 .mediumText {
   color: var(--accent-text-color);
+  font-size: 14px;
 }
 
 /* Styling for #loginLink */
