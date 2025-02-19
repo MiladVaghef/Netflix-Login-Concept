@@ -90,15 +90,19 @@ body {
   padding: 14px 10px;
   border-radius: 10px;
   border: none;
+  transition: all 0.3s ease-in-out;
 }
 /* Styling for when .formInput is hovered */
 .formInput:hover {
-  transition: all 0.3s ease-in;
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Styling for when .forInput is on focus */
 .formInput:focus {
   outline: none;
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Styling for .smallText */
