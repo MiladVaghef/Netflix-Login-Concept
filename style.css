@@ -1,14 +1,13 @@
 /* Custom CSS variables */
 :root {
-  --white: #ffffff;
-  --lighter-grey: #efefef;
-  --light-grey: #b6b6b6;
-  --dark-grey: #808080;
-  --burnt-red: #c31e25;
-  --light-red: #b00009;
-  --deep-red: #d81f26;
-  --crimson: #ed262d;
-  --charcoal: #171717;
+  --primary-color: #d81f26;
+  --primary-color-hover: #e03137;
+  --background-color: #171717;
+  --text-color: #efefef;
+  --secondary-text-color: #3a3a3a;
+  --accent-text-color: #808080;
+  --links-color: #b21f24;
+  --circles-color: #ffffff;
 }
 
 /* Inter Medium Font */
@@ -32,7 +31,7 @@ body {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  background-color: var(--charcoal);
+  background-color: var(--background-color);
   font-family: Inter-Medium;
   overflow-y: hidden;
 }
@@ -73,7 +72,7 @@ body {
 
 /* Styling for #netflixLogo svg path */
 #netflixLogo svg path {
-  fill: var(--deep-red);
+  fill: var(--primary-color);
 }
 
 /* Styling for #signUpForm */
@@ -94,9 +93,9 @@ body {
 }
 /* Styling for when .formInput is hovered */
 .formInput:hover {
-  background-color: var(--lighter-grey);
   transition: all 0.3s ease-in;
 }
+
 /* Styling for when .forInput is on focus */
 .formInput:focus {
   outline: none;
@@ -104,7 +103,7 @@ body {
 
 /* Styling for .smallText */
 .smallText {
-  color: var(--dark-grey);
+  color: var(--accent-text-color);
 }
 
 /* Styling for #termText */
@@ -114,13 +113,13 @@ body {
 
 /* Styling for #termLink */
 #termLink {
-  color: var(--burnt-red);
+  color: var(--links-color);
 }
 
 /* Styling for .submitButton */
 .submitButton {
-  color: #ffffff;
-  background-color: var(--deep-red);
+  color: var(--text-color);
+  background-color: var(--primary-color);
   font-size: 20px;
   margin-top: 60px;
   padding: 20px 20px;
@@ -131,7 +130,7 @@ body {
 }
 
 .submitButton:hover {
-  background-color: var(--light-red);
+  background-color: var(--primary-color-hover);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -145,12 +144,12 @@ body {
 
 /* Styling for .mediumText */
 .mediumText {
-  color: #808080;
+  color: var(--accent-text-color);
 }
 
 /* Styling for #loginLink */
 #loginLink {
-  color: var(--burnt-red);
+  color: var(--links-color);
 }
 
 /* Styling for #netflixBanner */
@@ -161,7 +160,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--deep-red);
+  background-color: var(--primary-color);
   gap: 1vw;
   overflow: hidden;
 }
@@ -178,7 +177,7 @@ body {
 #bannerText {
   font-family: Inter-Light;
   text-align: center;
-  color: var(--white);
+  color: var(--text-color);
   letter-spacing: 0.2vw;
   font-size: 0.9vw;
   position: relative;

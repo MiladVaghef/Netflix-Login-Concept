@@ -5,7 +5,7 @@
 /* Default style of all circles */
 .bannerCircles {
   position: absolute;
-  background-color: var(--crimson);
+  background-color: var(--circles-color);
   z-index: 1;
 }
 /* All the 21 circles: */
@@ -59,7 +59,7 @@
   width: 0px;
   height: 0px;
   border-radius: 10vw;
-  border: 9.8vw solid var(--crimson);
+  border: 9.8vw solid var(--circles-color);
   background-color: unset;
   border-top-color: transparent;
   transform: rotate(315deg);
@@ -162,7 +162,7 @@
   width: 0px;
   height: 0px;
   border-radius: 10vw;
-  border: 9.8vw solid var(--crimson);
+  border: 9.8vw solid var(--circles-color);
   background-color: unset;
   border-top-color: transparent;
   transform: rotate(315deg);
