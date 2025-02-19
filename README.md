@@ -9,7 +9,6 @@ The goal of this project was studying and practicing it in our way so I have to 
 ## Used technologies 
 
 * Javascript
-* JQuery
 * HTML
 * CSS
 
