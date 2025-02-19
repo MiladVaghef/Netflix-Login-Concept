@@ -1,12 +1,20 @@
 @media (max-height: 720px) {
+  #holder {
+    min-width: 460px;
+    max-width: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* Styling for #netflixLogo */
   #netflixLogo {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   /* Styling for #netflixLogo svg */
   #netflixLogo svg {
-    width: 140px;
+    width: 120px;
   }
 
   /* Styling for #signUpForm */
@@ -17,7 +25,8 @@
   /* Styling for .formInput */
   .formInput {
     font-size: 12px;
-    padding: 12px 8px;
+    font-size: 12px;
+    padding: 9px 6px;
     border-radius: 7px;
   }
 
@@ -34,14 +43,14 @@
 
   /* Styling for .submitButton */
   .submitButton {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 35px;
-    padding: 15px 0px;
+    padding: 10px 0px;
   }
 
   /* Styling for #loginLinkContainer */
   #loginLinkContainer {
-    margin-top: 10%;
+    margin-top: 7%;
     width: 80%;
   }
 
