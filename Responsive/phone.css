@@ -12,6 +12,11 @@
     max-width: unset;
   }
 
+  #holder {
+    max-width: unset;
+    min-width: unset;
+  }
+
   /* Styling for #netflixLogo */
   #netflixLogo {
     margin-bottom: 30px;
